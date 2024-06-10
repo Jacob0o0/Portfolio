@@ -1,0 +1,38 @@
+h1{
+    font-size: 3rem;
+}
+
+.home_page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+
+    width: 50vw;
+    height: 99vh;
+}
+
+.right{
+    width: 50vw;
+    height: 99vh;
+}
+
+.main_card{
+    width: 100%;
+    height: 70%;
+    
+    background-color: var(--primary-blue);
+    border-radius: 15px;
+}
+
+.main_picture{
+    width: 130%;
+
+}

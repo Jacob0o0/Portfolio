@@ -1,0 +1,19 @@
+.montserrat-font {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+:root{
+    /* =================== COLORS =================== */
+    --background-color: #1A1B26;
+    --primary-black: #24283B;
+    --primary-blue: #0099DB;
+    --primary-purple: #574AE2;
+    --font-color: #ffffff;
+
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-family: 'Montserrat', 'Courier New', Courier, monospace;
+}
