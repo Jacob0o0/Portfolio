@@ -18,6 +18,32 @@
     font-family: 'Montserrat', 'Courier New', Courier, monospace;
 }
 
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.screen_size{
+    width: 100dvw;
+    min-height: 100dvh;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .debbug{
     border: red dotted 3px;
+}
+
+.gradient_text {
+    background: linear-gradient(90deg, #C0CAF5 0%, #3D59A1 34%, #7AA2F7 73%, #C0CAF5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.shadow{
+    box-shadow: 0px 0px 27px 5px rgba(0,0,0,0.75);
 }

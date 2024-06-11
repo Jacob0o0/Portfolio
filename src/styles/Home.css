@@ -1,40 +1,206 @@
 h1{
-    font-size: 3rem;
+    font-size: 70px;
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    font-size: 40px;
+    margin-top: -8px;
+}
+
+h3{
+    font-size: 30px;
+    margin-bottom: -8px;
 }
 
 .home_page{
     display: flex;
+    align-items: flex-end;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
 
-    padding: 50px;
-    width: 87.5dvw;
-    height: 86.5dvh;
+    padding: 15px;
 }
 
 .left{
     display: flex;
     align-items: center;
+    justify-content: center;
+    align-items: center;
 
-    width: 50vw;
-    height: 99vh;
+    width: 25dvw;
+    height: 50dvh;
+    
+    margin: 10px;
+    margin-right: 20px;
 }
 
 .right{
-    width: 50vw;
-    height: 99vh;
+    display: flex;
+    flex-direction: column;
+
+    width: 35dvw;
+
+    margin: 10px;
+    margin-left: 20px;
+
+    p{
+        font-size: 25px;
+    }
 }
 
 .main_card{
-    width: 100%;
-    height: 70%;
+    width: 40vh;
+    height: 100%;
+
+    display: flex;
+    align-items: flex-end;
     
     background-color: var(--primary-blue);
+    border: solid var(--primary-blue) 3px;
     border-radius: 15px;
 }
 
 .main_picture{
-    width: 130%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    background-color: var(--primary-black);
+    border-radius: 15px;
+    border: 3px solid var(--primary-blue);
+
+    padding: 20px;
+    margin-top: 20px;
+
+    p{
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .reference{
+        font-size: 16px;
+    }
+}
+
+/* Estilos para pantallas medianas (tablet) */
+@media screen and (max-width: 768px) {
+    h1{
+        font-size: 50px;
+        padding: 0;
+        line-height: 1.0;
+    }
+    
+    h2{
+        font-size: 35px;
+        margin-top: 8px;
+    }
+    
+    h3{
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+
+    .home_page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left{
+        width: 20dvh;
+        height: 30dvh;
+
+        margin: 0;
+    }
+
+    .right{
+        width: 80dvw;
+        min-height: 50dvh;
+
+        p{
+            font-size: 25px;
+        }
+    }
+
+    .main_card{
+        width: 20vh;
+        height: 25dvh;
+    }
+
+    .quote{
+        p{
+            font-size: 20px;
+        }
+        .reference{
+            font-size: 15px;
+        }
+    }
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media screen and (max-width: 576px) {
+    h1{
+        font-size: 30px;
+        padding: 0;
+        line-height: 1.0;
+    }
+    
+    h2{
+        font-size: 20px;
+        margin-top: 8px;
+    }
+    
+    h3{
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .home_page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left{
+        width: 20dvh;
+        height: 30dvh;
+
+        margin: 0;
+    }
+
+    .right{
+        width: 80dvw;
+        min-height: 50dvh;
+
+        p{
+            font-size: 20px;
+        }
+    }
+
+    .main_card{
+        width: 20vh;
+        height: 25dvh;
+    }
+
+    .quote{
+        p{
+            font-size: 13px;
+        }
+        .reference{
+            font-size: 10px;
+        }
+    }
+}
+
+/* Estilos para pantallas grandes (desktop) */
+@media screen and (min-width: 1200px) {
 
 }
