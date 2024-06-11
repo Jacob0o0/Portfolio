@@ -17,3 +17,7 @@
     color: var(--font-color);
     font-family: 'Montserrat', 'Courier New', Courier, monospace;
 }
+
+.debbug{
+    border: red dotted 3px;
+}
