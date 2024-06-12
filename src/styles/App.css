@@ -21,6 +21,7 @@
 body{
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .screen_size{
@@ -39,9 +40,20 @@ body{
 }
 
 .gradient_text {
-    background: linear-gradient(90deg, #C0CAF5 0%, #3D59A1 34%, #7AA2F7 73%, #C0CAF5 100%);
+    background: linear-gradient(120deg, hsla(213, 62%, 45%, 1) 15%, hsla(0, 0%, 96%, 1) 20%, hsla(203, 89%, 71%, 1) 50%, hsla(213, 62%, 45%, 1) 60%, hsla(0, 0%, 96%, 1) 80%, hsla(213, 62%, 45%, 1) 90%);
+    background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 5s linear infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
 }
 
 .shadow{
