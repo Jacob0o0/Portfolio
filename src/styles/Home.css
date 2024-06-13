@@ -12,6 +12,7 @@ h2{
 h3{
     font-size: 30px;
     margin-bottom: -8px;
+    color: #cfcfcf;
 }
 
 .home_page{
@@ -202,7 +203,7 @@ h3{
         width: 20dvh;
         height: 30dvh;
 
-        margin: 0;
+        margin: 20px;
     }
 
     .right{
@@ -226,6 +227,10 @@ h3{
         .reference{
             font-size: 15px;
         }
+    }
+
+    .social_media{
+        left: -30px;
     }
 }
 
@@ -258,7 +263,7 @@ h3{
         width: 20dvh;
         height: 30dvh;
 
-        margin: 0;
+        margin: 15px;
     }
 
     .right{
@@ -386,6 +391,12 @@ h3{
         width: 500px;
         bottom: -20%;
         right: -300px;
+    }
+
+    .social_button{
+        width: 20px;
+        height: 20px;
+        font-size: 30px;
     }
 }
 

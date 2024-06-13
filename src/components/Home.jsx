@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <section className='screen_size center'>
       <div className='home_page'>
-        <div class="blob-left-blur">
+        <div className="blob-left-blur">
             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" background-color="transparent">
                 <path fill="#0099DB" transform="translate(100 100)">
                     <animate attributeName="d" dur="15000ms" repeatCount="indefinite"
@@ -24,7 +24,7 @@ const Home = () => {
                 </path>
             </svg>
         </div>
-        <div class="blob-left">
+        <div className="blob-left">
             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" background-color="transparent">
                 <path fill="#0099DB" transform="translate(100 100)">
                     <animate attributeName="d" dur="15000ms" repeatCount="indefinite"

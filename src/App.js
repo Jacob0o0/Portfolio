@@ -10,7 +10,10 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-      <Home/>
+    <>
+      <Home />
+      <Experience />
+    </>
   );
 }
 
