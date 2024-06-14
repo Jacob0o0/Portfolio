@@ -1,0 +1,461 @@
+.portfolio_page{
+    padding: 0px;
+
+    position: relative;
+
+    width: 70dvw;
+
+    margin: 0 100px 0 100px;
+}
+
+.project{
+    display: flex;
+    align-items: flex-end;
+
+    position: relative;
+
+    margin: 0px 0px 20dvh 0;
+
+    width: 100%;
+    height: 50dvh;
+}
+
+.mockup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    width: 40dvw;
+    height: 30dvw;
+
+    /* background-color: var(--primary-black); */
+    border-radius: 15px;
+}
+
+.mockup_img{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+    width: 120%;
+    height: 120%;
+    
+    object-fit: cover; /* Hace que la imagen se comporte como background-size: cover */
+    animation: float 3s ease-in-out infinite; /* Aplicación de la animación */
+}
+
+.icon{
+    position: absolute;
+    top: 40%;
+    right: 5%;
+
+    z-index: 2;
+
+    border-radius: 15px;
+}
+
+.card_project{
+    padding: 20px;
+    
+    max-width: 400px;
+
+    .title{
+        margin: 0;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .rol{
+        padding: 5px 10px 5px 10px;
+        margin: 0 10px 0 0;
+        margin-top: 10px;
+
+        font-size: 16px;
+        font-weight: 700;
+
+        background-color: var(--primary-blue);
+        border-radius: 15px;
+    }
+
+    .job{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        overflow: hidden;
+        position: relative;
+
+        padding: 5px 10px 5px 10px;
+        margin: 0;
+        margin-top: 10px;
+
+        font-size: 16px;
+        font-weight: 700;
+
+        /* background: linear-gradient(18deg,  hsla(43, 91%, 69%, 1) 0%, hsla(212, 74%, 50%, 1) 100%); */
+        border-radius: 15px;
+    }
+}
+
+.c_r{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+    text-align: right;
+}
+
+.blob1{
+    z-index: -1;
+
+    width: 600px;
+
+    position: absolute;
+    left: 0px;
+    top: -10%;
+}
+
+.blob1-blur{
+    z-index: -1;
+
+    width: 600px;
+    
+    position: absolute;
+    left: 0px;
+    top: -10%;
+
+    opacity: 1;
+    filter: blur(20px);
+}
+
+.blob2{
+    z-index: -1;
+
+    width: 700px;
+
+    position: absolute;
+    right: -200px;
+    top: -30%;
+}
+
+.blob2-blur{
+    z-index: -1;
+
+    width: 700px;
+    
+    position: absolute;
+    right: -200px;
+    top: -30%;
+
+    opacity: 1;
+    filter: blur(20px);
+}
+
+.blob3{
+    z-index: -1;
+
+    width: 650px;
+
+    position: absolute;
+    left: -10%;
+    top: -30%;
+}
+
+.blob3-blur{
+    z-index: -1;
+
+    width: 650px;
+    
+    position: absolute;
+    left: -10%;
+    top: -30%;
+
+    opacity: 1;
+    filter: blur(20px);
+}
+
+.blob4{
+    z-index: -1;
+
+    width: 680px;
+
+    position: absolute;
+    right: 0px;
+    top: -30%;
+}
+
+.blob4-blur{
+    z-index: -1;
+
+    width: 680px;
+    
+    position: absolute;
+    right: 0px;
+    top: -30%;
+
+    opacity: 1;
+    filter: blur(20px);
+}
+
+.blob5{
+    z-index: -1;
+
+    width: 680px;
+
+    position: absolute;
+    left: 0px;
+    top: -30%;
+}
+
+.blob5-blur{
+    z-index: -1;
+
+    width: 680px;
+    
+    position: absolute;
+    left: 0px;
+    top: -30%;
+
+    opacity: 1;
+    filter: blur(20px);
+}
+
+/* LAPTOPS */
+@media screen and (max-width: 1300px) {
+    .blob1{
+        left: -10%;
+    }
+
+    .blob1-blur{
+        left: -10%;
+    }
+
+    .blob4{
+        right: -20%;
+    }
+
+    .blob4-blur{
+        right: -20%;
+    }
+
+    .blob5{
+        left: -15%;
+    }
+
+    .blob5-blur{
+        left: -15%;
+    }
+}
+
+/* Estilos para pantallas medianas-grandes (iPads) */
+@media screen and (max-width: 1200px) {
+    .project{
+        margin: 0px 0px 5dvh 0;
+
+        width: 100%;
+        height: 30dvh;
+    }
+
+    .card_project{
+        max-width: 30dvw;
+    }
+
+    .mockup{
+        width: 50dvw;
+        height: 40dvw;
+    }
+    
+    .mockup_img{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .icon{
+        top: 40%;
+        right: 5%;
+
+        width: 50px;
+    
+        border-radius: 15px;
+    }
+
+    .blob1{
+        width: 450px;
+
+        left: -40%;
+        top: -10%;
+    }
+    
+    .blob1-blur{
+        width: 450px;
+
+        left: -40%;
+        top: -10%;
+    }
+    
+    .blob2{
+        width: 500px;
+    
+        right: -250px;
+        top: -10%;
+    }
+    
+    .blob2-blur{    
+        width: 500px;
+        
+        right: -250px;
+        top: -10%;
+    }
+    
+    .blob3{    
+        width: 420px;
+    
+        left: -20%;
+        top: -10%;
+    }
+    
+    .blob3-blur{    
+        width: 420px;
+        
+        left: -20%;
+        top: -10%;
+    }
+    
+    .blob4{    
+        width: 400px;
+    
+        right: -40%;
+        top: -10%;
+    }
+    
+    .blob4-blur{    
+        width: 400px;
+        
+        right: -40%;
+        top: -10%;
+    }
+    
+    .blob5{    
+        width: 390px;
+    
+        left: -20%;
+        top: -10%;
+    }
+    
+    .blob5-blur{    
+        width: 390px;
+        
+        left: -20%;
+        top: -10%;
+    }
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media screen and (max-width: 576px) {
+    .project{
+        margin: 0px 0px 5dvh 0;
+
+        flex-direction: column;
+
+        width: 100%;
+        height: auto;
+    }
+
+    .card_project{
+        max-width: 70dvw;
+        margin-bottom: 10dvh;
+        margin-top: 5dvh;
+    }
+
+    .mockup{
+        width: 70dvw;
+    }
+    
+    .mockup_img{
+        position: absolute;
+        top: -50%;
+        left: -50%;
+
+        width: 200%;
+        height: 200%;
+    }
+
+    .reverse_col{
+        flex-direction: column-reverse;
+    }
+
+    .blob1{
+        width: 70dvw;
+
+        left: -40%;
+        top: -10%;
+    }
+    
+    .blob1-blur{
+        width: 70dvw;
+
+        left: -40%;
+        top: -10%;
+    }
+    
+    .blob2{
+        width: 90dvw;
+    
+        right: -20%;
+        top: -20%;
+    }
+    
+    .blob2-blur{    
+        width: 90dvw;
+        
+        right: -20%;
+        top: -20%;
+    }
+    
+    .blob3{    
+        width: 80dvw;
+    
+        left: -20%;
+        top: -20%;
+    }
+    
+    .blob3-blur{    
+        width: 80dvw;
+        
+        left: -20%;
+        top: -20%;
+    }
+    
+    .blob4{    
+        width: 80dvw;
+    
+        right: -0%;
+        top: -10%;
+    }
+    
+    .blob4-blur{    
+        width: 80dvw;
+        
+        right: -0%;
+        top: -10%;
+    }
+    
+    .blob5{    
+        width: 80dvw;
+    
+        left: -20%;
+        top: -16%;
+    }
+    
+    .blob5-blur{    
+        width: 80dvw;
+        
+        left: -20%;
+        top: -16%;
+    }
+}

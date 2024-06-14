@@ -86,15 +86,6 @@ body{
     }
 }
 
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 200% 50%;
-    }
-}
-
 @keyframes gradientAnimation-C {
     0% {
         background-position: 0% 50%;
@@ -104,6 +95,15 @@ body{
         transform: rotate(360deg);
     }
 }
+
+@keyframes float {
+    0%, 100% {
+      transform: translateY(10px);
+    }
+    50% {
+      transform: translateY(-10px); /* Ajusta la distancia de flotación */
+    }
+  }
 
 .shadow{
     box-shadow: 0px 0px 27px 5px rgba(0,0,0,0.75);

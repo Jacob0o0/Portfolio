@@ -1,0 +1,106 @@
+.skills_page{
+    display: flex;
+
+    padding: 0px;
+
+    position: relative;
+
+    width: 70dvw;
+
+    margin: 0 100px 0 100px;
+}
+
+.cards_skills{
+    width: 70dvw;
+    height: auto;
+
+    .title{
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
+
+.rowR{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+
+    .card_l{
+        position: relative;
+
+        margin: 20px;
+        padding: 20px;
+
+        width: 70%;
+
+        background-color: var(--primary-black);
+        border-radius: 15px;
+        border: 3px solid var(--primary-blue);
+    }
+
+    .card_r{
+        position: relative;
+
+        margin: 20px;
+        padding: 20px;
+
+        background-color: var(--primary-black);
+        border-radius: 15px;
+        border: 3px solid var(--primary-blue);
+    }
+}
+
+.rowL{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    
+    .card_r{
+        position: relative;
+
+        margin: 20px;
+        padding: 20px;
+
+        width: 70%;
+
+        background-color: var(--primary-black);
+        border-radius: 15px;
+        border: 3px solid var(--primary-blue);
+    }
+
+    .card_l{
+        position: relative;
+
+        margin: 20px;
+        padding: 20px;
+
+        background-color: var(--primary-black);
+        border-radius: 15px;
+        border: 3px solid var(--primary-blue);
+    }
+}
+
+.stack{    
+    display: flex;
+
+    img{
+        margin: 10px;
+    }
+}
+
+.icon_s{
+    padding: 10px;
+    
+    position: absolute;
+    top: -10%;
+    right: -3%;
+
+    background-color: var(--primary-blue);
+    border-radius: 20px;
+
+    font-size: 35px;
+
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.5);
+}

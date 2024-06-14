@@ -13,6 +13,8 @@ function App() {
     <>
       <Home />
       <Experience />
+      <Portfolio />
+      <Skills />
     </>
   );
 }
