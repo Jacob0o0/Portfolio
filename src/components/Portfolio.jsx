@@ -5,14 +5,11 @@ import '../styles/Portfolio.css'
 
 // =============== ASSETS ===============
 import bonsaving from '../assets/images/bonsaving_rb_a.png'
-import icon_bonsaving from '../assets/images/icon-bonsaving.png'
 import vanita from '../assets/images/vanita_rb_a.png'
-import icon_vanita from '../assets/images/icon-vanita.png'
 import architecture from '../assets/images/architecture_rb.png'
 import cowspiracy from '../assets/images/cowspiracy_rb.png'
 import icon_cow from '../assets/images/icon-cow.png'
 import finanup from '../assets/images/finanup_rb.png'
-import icon_finanup from '../assets/images/icon-finanup.png'
 
 
 function Portfolio() {
@@ -157,7 +154,6 @@ function Portfolio() {
               <p className="description">App created for the National Hackathon of Comunity Changemakers with location in Monterrey. Project with <span className="gradient_text">Augmented Reality</span> integrated into its fuctionalities.</p>
           </div>
           <div className='mockup'>
-            {/* <img src={icon_bonsaving} alt="icon" className='icon' style={{width:'200px', top:'-10%', left:'5%'}}/> */}
             <img src={bonsaving} alt="Architecture Img" className='mockup_img'/>
           </div>
 
