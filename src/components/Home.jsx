@@ -42,10 +42,10 @@ const Home = () => {
               <div className="main_card shadow debbug">
                   <img src={my_picture} alt="Jacobo Escorcia" className='main_picture'/>
                   <div className='social_media'>
-                    <a href="https://www.linkedin.com/" class="social_button linkedin" target="_blank">
+                    <a href="https://www.linkedin.com/in/jacobo-escorcia-alcantara-392bb8208/" class="social_button linkedin" target="_blank">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://www.github.com/" class="social_button github" target="_blank">
+                    <a href="https://github.com/Jacob0o0" class="social_button github" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
                   </div>

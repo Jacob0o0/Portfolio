@@ -103,6 +103,24 @@ body{
     50% {
       transform: translateY(-10px); /* Ajusta la distancia de flotación */
     }
+}
+
+@keyframes floatAlt {
+    0%, 100% {
+      transform: translateY(5px);
+    }
+    50% {
+      transform: translateY(-5px); /* Ajusta la distancia de flotación */
+    }
+}
+
+@keyframes scalar {
+    0%, 100% {
+      transform: scale(1.0);
+    }
+    50% {
+      transform: scale(1.02); /* Ajusta la distancia de flotación */
+    }
   }
 
 .shadow{
