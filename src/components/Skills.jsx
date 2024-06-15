@@ -18,11 +18,6 @@ import xampp_logo from '../assets/images/xampp_logo.png'
 import react_logo from '../assets/images/react_logo.png'
 import bootstrap_logo from '../assets/images/bootstrap_logo.png'
 
-import c_logo from '../assets/images/c_logo.png'
-import cpp_logo from '../assets/images/cpp_logo.png'
-import csharp_logo from '../assets/images/csharp_logo.png'
-import python_logo from '../assets/images/python_logo.png'
-
 import phone from '../assets/images/phone.png'
 import laptop from '../assets/images/laptop.png'
 
