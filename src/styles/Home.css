@@ -207,42 +207,42 @@ h3{
         font-size: 40px;
         font-weight: 700;
     }
-
-    .contact{
-        margin: 15px 20px 15px 20px;
-
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        background-color: var(--primary-black);
-        border-radius: 15px;
-        border: 3px solid var(--primary-blue);
-
-        transition: transform 0.3s ease-in-out;
-
-        i{
-            margin: 10px;
-            padding: 5px;
-
-            border: 3px white solid;
-            border-radius: 15px;
-        }
-
-        p{
-            margin: 15px 15px 15px 0;
-        }
-    }
-
-    .contact:hover{
-        transform: scale(1.2);
-    }
 }
 
 .card_f{
     display: flex;
     flex-direction: row;
     padding: 20px;
+}
+
+.contact{
+    margin: 15px 20px 15px 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: var(--primary-black);
+    border-radius: 15px;
+    border: 3px solid var(--primary-blue);
+
+    transition: transform 0.3s ease-in-out;
+
+    i{
+        margin: 10px;
+        padding: 5px;
+
+        border: 3px white solid;
+        border-radius: 15px;
+    }
+
+    p{
+        margin: 15px 15px 15px 0;
+    }
+}
+
+.contact:hover{
+    transform: scale(1.2);
 }
 
 /* Estilos para pantallas medianas-grandes (iPads) */
