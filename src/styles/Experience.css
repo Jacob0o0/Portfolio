@@ -89,7 +89,7 @@
         width: 100px;
         height: 100px;
 
-        background: linear-gradient(18deg,  hsla(43, 91%, 69%, 1) 0%, hsla(212, 74%, 50%, 1) 100%);
+        background: linear-gradient(18deg,  hsla(43, 91%, 69%, 1) 12%, hsla(212, 74%, 50%, 1) 100%);
         border-radius: 15px;
         animation: gradientAnimation-C 5s linear infinite;
     }

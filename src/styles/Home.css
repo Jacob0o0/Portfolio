@@ -437,6 +437,10 @@ h3{
         }
     }
 
+    .contact{
+        flex-direction: row;
+    }
+
     .card_f{
         z-index: 2;
         

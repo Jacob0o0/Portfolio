@@ -46,7 +46,7 @@ function Experience() {
                         <div className="flex margin">
                             <p className="rol">Game/Web Developer</p>
                         </div>
-                        <p className="description">In charge of creating software for various tasks and automations, solving problems with a team, create solutions for clients and developing API’s and microservices.</p>
+                        <p className="description">I've created visually appealing and functional websites tailored to the specific needs of various clients. In my free time, I pursued my passion for game development, independently designing and developing two games.</p>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@ function Experience() {
                             <p className="rol">Application Developer</p>
                             <p className="job">Intern</p>
                         </div>
-                        <p className="description">In charge of creating software for various tasks and automations, solving problems with a team, create solutions for clients and developing API’s and microservices.</p>
+                        <p className="description">As an Application Developer, I've specialized in using PL/SQL to resolve issues in a critical enterprise system, ensuring continuous improvement and efficient backend functionality. I actively pursue professional growth through specialized courses in technical and soft skills.</p>
                     </div>
                 </div>
             </div>
