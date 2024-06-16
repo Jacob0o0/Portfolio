@@ -23,7 +23,7 @@ import laptop from '../assets/images/laptop.png'
 
 function Skills() {
   return (
-    <section className='screen_size center'>
+    <section className='screen_size center' style={{alignItems:'flex-start'}}>
       <div className="skills_page column">
         <div className="blob-phone-blur">
             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" background-color="transparent">

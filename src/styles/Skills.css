@@ -171,8 +171,8 @@
     width: 750px;
 
     position: absolute;
-    right: -50%;
-    bottom: -60%;
+    left: 60vw;
+    top: 50%;
 }
 
 .blob-laptop-blur{
@@ -181,8 +181,8 @@
     width: 750px;
     
     position: absolute;
-    right: -50%;
-    bottom: -60%;
+    left: 60vw;
+    top: 50%;
 
     opacity: 1;
     filter: blur(20px);
@@ -281,14 +281,14 @@
     
     .blob-laptop{
         width: 75dvw;
-        right: -50%;
-        bottom: -90%;
+        left: 50%;
+        top: 90%;
     }
     
     .blob-laptop-blur{
         width: 75dvw;
-        right: -50%;
-        bottom: -90%;
+        left: 50%;
+        top: 90%;
     }
 }
 
@@ -298,6 +298,14 @@
 
 /* Estilos para pantallas pequeñas (móviles) */
 @media screen and (max-width: 576px) {
+    .skills_page{
+        height: 130vh;
+    }
+
+    .dev_skills{
+        height: 0;
+    }
+
     .row_responsive{
         flex-direction: column;
     }
@@ -337,6 +345,8 @@
     }
     
     .skills_R{
+        justify-content: flex-start;
+
         width: 100%;
         min-height: 40dvh;
 
@@ -372,32 +382,69 @@
     }
 
     .blob-phone{
-        width: 500px;
+        width: 460px;
         left: -140%;
-        top: 20%;
+        top: 15%;
     }
     
     .blob-phone-blur{
-        width: 500px;
+        width: 460px;
         left: -140%;
-        top: 20%;
+        top: 15%;
     }
     
     .blob-laptop{
         width: 75dvw;
-        right: -50%;
-        top: 105%;
+        left: 0%;
+        top: 83vh;
     }
     
     .blob-laptop-blur{
         width: 75dvw;
-        right: -50%;
-        top: 105%;
+        left: 0%;
+        top: 83vh;
     }
 }
 
-@media screen and (max-width: 380) {
+@media screen and (max-width: 375px) {
+    .skills_page{
+        height: 130vh;
+    }
+
     .skills_L{
-        min-height: 40dvh;
+        min-height: 50dvh;
+    }
+
+    .blob-laptop{
+        width: 75dvw;
+        left: 0%;
+        top: 83vh;
+    }
+    
+    .blob-laptop-blur{
+        width: 75dvw;
+        left: 0%;
+        top: 83vh;
+    }
+}
+
+@media screen and (max-height: 736px) {
+    .skills_page{
+        height: 180vh;
+    }
+    .skills_L{
+        min-height: 70dvh;
+    }
+
+    .blob-laptop{
+        width: 75dvw;
+        left: 0%;
+        top: 110vh;
+    }
+    
+    .blob-laptop-blur{
+        width: 75dvw;
+        left: 0%;
+        top: 110vh;
     }
 }

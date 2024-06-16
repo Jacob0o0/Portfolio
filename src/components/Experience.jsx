@@ -3,9 +3,6 @@ import React from 'react'
 // =============== STYLE ===============
 import '../styles/Experience.css'
 
-// =============== ASSETS ===============
-import my_picture from '../assets/images/Me_happy.png'
-
 function Experience() {
   return (
     <section className='screen_size center'>

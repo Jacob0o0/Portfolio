@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 
 // =============== STYLE ===============
 import '../styles/Portfolio.css'
@@ -187,7 +187,7 @@ function Portfolio() {
           </div>
         </div>
 
-        <div className='project row'>
+        <div className='project row' style={{marginBottom:'0'}}>
           <div className='mockup'>
             {/* <img src={icon_finanup} alt="icon" className='icon' style={{width:'150px', top:'20%'}}/> */}
             <img src={finanup} alt="Vanita Img" className='mockup_img'/>

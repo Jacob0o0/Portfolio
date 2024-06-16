@@ -135,7 +135,7 @@
     width: 700px;
 
     position: absolute;
-    right: -200px;
+    left: 40vw;
     top: -30%;
 }
 
@@ -145,7 +145,7 @@
     width: 700px;
     
     position: absolute;
-    right: -200px;
+    left: 40vw;
     top: -30%;
 
     opacity: 1;
@@ -232,11 +232,11 @@
     }
 
     .blob4{
-        right: -20%;
+        left: 35vw;
     }
 
     .blob4-blur{
-        right: -20%;
+        left: 35vw;
     }
 
     .blob5{
@@ -301,14 +301,14 @@
     .blob2{
         width: 500px;
     
-        right: -250px;
+        left: 32vw;
         top: -10%;
     }
     
     .blob2-blur{    
         width: 500px;
         
-        right: -250px;
+        left: 32vw;
         top: -10%;
     }
     
@@ -329,14 +329,14 @@
     .blob4{    
         width: 400px;
     
-        right: -40%;
+        left: 32vw;
         top: -10%;
     }
     
     .blob4-blur{    
         width: 400px;
         
-        right: -40%;
+        left: 32vw;
         top: -10%;
     }
     
@@ -406,14 +406,14 @@
     .blob2{
         width: 90dvw;
     
-        right: -20%;
+        left: -12vw;
         top: -20%;
     }
     
     .blob2-blur{    
         width: 90dvw;
         
-        right: -20%;
+        left: -12vw;
         top: -20%;
     }
     
@@ -434,14 +434,14 @@
     .blob4{    
         width: 80dvw;
     
-        right: -0%;
+        left: -8vw;
         top: -10%;
     }
     
     .blob4-blur{    
         width: 80dvw;
         
-        right: -0%;
+        left: -8vw;
         top: -10%;
     }
     

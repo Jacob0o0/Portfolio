@@ -214,7 +214,7 @@
     z-index: 1;
     width: 450px;
     position: absolute;
-    right: -200px;
+    left: 70vw;
     bottom: 0px;
 }
 
@@ -222,7 +222,7 @@
     z-index: -1;
     width: 450px;
     position: absolute;
-    right: -200px;
+    left: 70vw;
     bottom: 0px;
     opacity: 1;
     filter: blur(20px);
@@ -288,5 +288,23 @@
 
     .point_3{
         display: none;
+    }
+
+    .blob-rightE{
+        z-index: 1;
+        width: 450px;
+        position: absolute;
+        left: 20vw;
+        bottom: 0px;
+    }
+    
+    .blob-rightE-blur{
+        z-index: -1;
+        width: 450px;
+        position: absolute;
+        left: 20vw;
+        bottom: 0px;
+        opacity: 1;
+        filter: blur(20px);
     }
 }
