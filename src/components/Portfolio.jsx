@@ -67,7 +67,7 @@ function Portfolio() {
             <div className="flex margin">
                 <p className="rol">Web Page</p>
             </div>
-            <p className="description">Winning project of a competition for the college degree. Full Stack project develop in a course of 3 mounts. This project use a relational database to save all the information of students projects.</p>
+            <p className="description">Winning project of a competition for the college degree. Full Stack project develop in a course of 3 months. This project use a relational database to save all the information of students projects.</p>
         </div>
         <div className='mockup'>
             <img src={architecture} alt="Architecture Img" className='mockup_img'/>
