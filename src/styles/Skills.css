@@ -145,21 +145,21 @@
 .blob-phone{
     z-index: -1;
 
-    width: 560px;
+    width: 500px;
 
     position: absolute;
-    left: -30%;
-    top: 20%;
+    left: -20%;
+    top: 15%;
 }
 
 .blob-phone-blur{
     z-index: -1;
 
-    width: 560px;
+    width: 500px;
     
     position: absolute;
-    left: -30%;
-    top: 20%;
+    left: -20%;
+    top: 15%;
 
     opacity: 1;
     filter: blur(20px);
@@ -168,20 +168,20 @@
 .blob-laptop{
     z-index: -1;
 
-    width: 750px;
+    width: 600px;
 
     position: absolute;
-    left: 60vw;
+    left: 0%;
     top: 50%;
 }
 
 .blob-laptop-blur{
     z-index: -1;
 
-    width: 750px;
+    width: 600px;
     
     position: absolute;
-    left: 60vw;
+    left: 0%;
     top: 50%;
 
     opacity: 1;
@@ -396,13 +396,13 @@
     .blob-laptop{
         width: 75dvw;
         left: 0%;
-        top: 83vh;
+        top: 60%;
     }
     
     .blob-laptop-blur{
         width: 75dvw;
         left: 0%;
-        top: 83vh;
+        top: 60%;
     }
 }
 
@@ -418,13 +418,13 @@
     .blob-laptop{
         width: 75dvw;
         left: 0%;
-        top: 83vh;
+        top: 60%;
     }
     
     .blob-laptop-blur{
         width: 75dvw;
         left: 0%;
-        top: 83vh;
+        top: 60%;
     }
 }
 
@@ -436,7 +436,7 @@
         min-height: 70dvh;
     }
 
-    .blob-laptop{
+    /* .blob-laptop{
         width: 75dvw;
         left: 0%;
         top: 110vh;
@@ -446,5 +446,5 @@
         width: 75dvw;
         left: 0%;
         top: 110vh;
-    }
+    } */
 }
