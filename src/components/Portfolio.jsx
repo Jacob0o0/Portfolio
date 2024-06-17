@@ -200,7 +200,7 @@ function Portfolio() {
         </Reveal>
 
         <Reveal>
-            <div className='project row' style={{marginBottom:'0'}}>
+            <div className='project row margin_responsive'>
             <div className='mockup'>
                 {/* <img src={icon_finanup} alt="icon" className='icon' style={{width:'150px', top:'20%'}}/> */}
                 <img src={finanup} alt="Vanita Img" className='mockup_img'/>

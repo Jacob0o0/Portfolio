@@ -221,6 +221,10 @@
     filter: blur(20px);
 }
 
+.margin_responsive{
+    margin-bottom: 20vh;
+}
+
 /* LAPTOPS */
 @media screen and (max-width: 1300px) {
     .blob1{
@@ -457,5 +461,9 @@
         
         left: -20%;
         top: -16%;
+    }
+
+    .margin_responsive{
+        margin-bottom: 0;
     }
 }

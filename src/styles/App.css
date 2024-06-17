@@ -37,6 +37,7 @@ body{
     min-height: 100dvh;
 
     /* overflow-x: hidden; */
+    overflow: hidden;
 }
 
 .center{
