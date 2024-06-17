@@ -1,9 +1,44 @@
-import React from 'react'
+import React, {useEffect} from 'react';
+import {Reveal} from './utils/Reveal';
+import { useRef } from "react";
+import { motion, useInView, useAnimation, useTransform, useScroll } from 'framer-motion';
 
 // =============== STYLE ===============
 import '../styles/Experience.css'
+import userEvent from '@testing-library/user-event';
 
 function Experience() {
+  const refExp1 = useRef(null)
+  const refExp2 = useRef(null)
+  const refExp3 = useRef(null)
+  const point1 = useRef(null)
+  const point2 = useRef(null)
+  const point3 = useRef(null)
+
+  const isInView1 = useInView(refExp1, {amount: 1});
+  const isInView2 = useInView(refExp2, {amount: 1});
+  const isInView3 = useInView(refExp3, {amount: 1});
+
+  const mainControls = useAnimation();
+  const point1Controls = useAnimation();
+  const point2Controls = useAnimation();
+  const point3Controls = useAnimation();
+
+  useEffect(() => {
+    if (isInView1){
+      mainControls.start({ height: '25%' });
+      point1Controls.start({opacity: 1})
+    }
+    if (isInView2){
+      mainControls.start({ height: '55%' });
+      point2Controls.start({opacity: 1})
+    }
+    if (isInView3){
+      mainControls.start({ height: '80%' });
+      point3Controls.start({opacity: 1})
+    }
+  }, [isInView1, isInView2, isInView3]);
+
   return (
     <section className='screen_size center'>
         <div className='experience_page' style={{ marginBottom: '100px'}}>
@@ -35,55 +70,92 @@ function Experience() {
                     </path>
                 </svg>
             </div>
-            <p className='page_name'>Experience</p>
+            <Reveal>
+              <p className='page_name'>Experience</p>
+            </Reveal>
             <div className="row alignment_right">
-                <div className='experience alignment_left'>
-                    <div className="up_mark">
-                        <p className="rol_time">Free time / Vacations</p>
-                    </div>
-                    <div className="card shadow">
-                        <p className="title">Freelancer</p>
-                        <div className="flex margin">
-                            <p className="rol">Game/Web Developer</p>
-                        </div>
-                        <p className="description">I've created visually appealing and functional websites tailored to the specific needs of various clients. In my free time, I pursued my passion for game development, independently designing and developing two games.</p>
-                    </div>
-                </div>
+                <Reveal>
+                  <div className='experience alignment_left' ref={refExp1}>
+                      <div className="up_mark">
+                          <p className="rol_time">Free time / Vacations</p>
+                      </div>
+                      <div className="card shadow">
+                          <p className="title">Freelancer</p>
+                          <div className="flex margin">
+                              <p className="rol">Game/Web Developer</p>
+                          </div>
+                          <p className="description">I've created visually appealing and functional websites tailored to the specific needs of various clients. In my free time, I pursued my passion for game development, independently designing and developing two games.</p>
+                      </div>
+                  </div>
+                </Reveal>
             </div>
             <div className="row alignment_left">
-                <div className='experience' style={{ alignItems: 'flex-end'}}>
-                    <div className="up_mark">
-                        <p className="rol_time">Jun 2023 - Oct 2023</p>
-                    </div>
-                    <div className="card shadow">
-                        <p className="title">STO Consulting</p>
-                        <div className="flex margin">
-                            <p className="rol">Java Developer</p>
-                            <p className='job'>Intern</p>
-                        </div>
-                        <p className="description">In charge of creating software for various tasks and automations, solving problems with a team, create solutions for clients and developing API’s and microservices.</p>
-                    </div>
-                </div>
+                <Reveal>
+                  <div className='experience' style={{ alignItems: 'flex-end'}} ref={refExp2}>
+                      <div className="up_mark">
+                          <p className="rol_time">Jun 2023 - Oct 2023</p>
+                      </div>
+                      <div className="card shadow">
+                          <p className="title">STO Consulting</p>
+                          <div className="flex margin">
+                              <p className="rol">Java Developer</p>
+                              <p className='job'>Intern</p>
+                          </div>
+                          <p className="description">In charge of creating software for various tasks and automations, solving problems with a team, create solutions for clients and developing API’s and microservices.</p>
+                      </div>
+                  </div>
+                </Reveal>
             </div>
             <div className="row alignment_right">
-                <div className='experience'>
-                    <div className="up_mark">
-                        <p className="rol_time">Nov 2023 - Jun 2024</p>
-                    </div>
-                    <div className="card shadow">
-                        <p className="title">IBM</p>
-                        <div className="flex margin">
-                            <p className="rol">Application Developer</p>
-                            <p className="job">Intern</p>
-                        </div>
-                        <p className="description">As an Application Developer, I've specialized in using PL/SQL to resolve issues in a critical enterprise system, ensuring continuous improvement and efficient backend functionality. I actively pursue professional growth through specialized courses in technical and soft skills.</p>
-                    </div>
-                </div>
+                <Reveal>
+                  <div className='experience' ref={refExp3}>
+                      <div className="up_mark">
+                          <p className="rol_time">Nov 2023 - Jun 2024</p>
+                      </div>
+                      <div className="card shadow">
+                          <p className="title">IBM</p>
+                          <div className="flex margin">
+                              <p className="rol">Application Developer</p>
+                              <p className="job">Intern</p>
+                          </div>
+                          <p className="description">As an Application Developer, I've specialized in using PL/SQL to resolve issues in a critical enterprise system, ensuring continuous improvement and efficient backend functionality. I actively pursue professional growth through specialized courses in technical and soft skills.</p>
+                      </div>
+                  </div>
+                </Reveal>
             </div>
-            <div className="line"></div>
-            <div className="point_1"></div>
-            <div className="point_2"></div>
-            <div className="point_3"></div>
+            <motion.div 
+              className="line"
+              animate={mainControls}
+              transition={{ duration: 2, delay:0.5 }}
+              ></motion.div>
+
+            <motion.div className="point_1"
+              ref={point1}
+              animate={point1Controls}
+              initial={{ opacity: 0 }}
+              variants={{
+                  visible: { opacity: 1 }
+              }}
+              transition={{ duration: 2, delay: 1 }}
+            ></motion.div>
+            <motion.div className="point_2"
+              ref={point2}
+              animate={point2Controls}
+              initial={{ opacity: 0 }}
+              variants={{
+                  visible: { opacity: 1 }
+              }}
+              transition={{ duration: 2, delay: 1 }}
+            ></motion.div>
+            <motion.div className="point_3"
+              ref={point3}
+              animate={point3Controls}
+              initial={{ opacity: 0 }}
+              variants={{
+                  visible: { opacity: 1 }
+              }}
+              transition={{ duration: 1, delay: 1 }}
+            ></motion.div>
 
             <div className="blob-rightE">
                 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" background-color="transparent">

@@ -2,11 +2,22 @@ import React from 'react'
 
 // =============== STYLE ===============
 import '../styles/Home.css'
+import {Reveal} from './utils/Reveal'
 
 // =============== ASSETS ===============
 import my_picture from '../assets/images/Me_happy.png'
 
 const Home = () => {
+  const downloadPDF = () => {
+    const pdfUrl = `${process.env.PUBLIC_URL}/JacoboEscorcia_Resume.pdf`; // Ruta relativa al PDF en tu carpeta de assets
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'JacoboEscorcia_Resume.pdf'; // Nombre que se le dará al archivo descargado
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
   return (
     <section className='screen_size center'>
       <div className='home'>
@@ -41,9 +52,10 @@ const Home = () => {
         </div>
 
         <div className="center_home">
-          <div className="home_page">
-            <aside className='left'>
-                <div className="main_card shadow debbug">
+          <Reveal>
+            <div className="home_page">
+              <aside className='left'>
+                  <div className="main_card shadow debbug">
                     <img src={my_picture} alt="Jacobo Escorcia" className='main_picture'/>
                     <div className='social_media'>
                       <a href="https://www.linkedin.com/in/jacobo-escorcia-alcantara-392bb8208/" class="social_button linkedin" target="_blank" rel="noopener noreferrer">
@@ -53,26 +65,28 @@ const Home = () => {
                           <i class="fab fa-github"></i>
                       </a>
                     </div>
-                </div>
-            </aside>
-            <aside className='right'>
-                <h3>Hello World, I'm</h3>
-                <h1>Jacobo Escorcia,</h1>
-                <h2 className='gradient_text'>Application Developer</h2>
+                  </div>
+              </aside>
+              <aside className='right'>
+                  <h3>Hello World, I'm</h3>
+                  <h1>Jacobo Escorcia,</h1>
+                  <h2 className='gradient_text'>Application Developer</h2>
 
-                <p>
-                    I'm a versatile, curious and <span class="gradient_text">self-taught</span> programmer who is always willing to learn and improve my skills. 
-                    <br />
-                    <br />
-                    I love making enjoyable, innovative and creative products.
-                </p>
+                  <p>
+                      I'm a versatile, curious and <span class="gradient_text">self-taught</span> programmer who is always willing to learn and improve my skills. 
+                      <br />
+                      <br />
+                      I love making enjoyable, innovative and creative products.
+                  </p>
 
-                <div className='quote shadow'>
-                  <p>“The people who are crazy enough to think they can change the world, are the ones who do.”</p>
-                  <p className='reference'>- Steve Jobs</p>
-                </div>
-            </aside>
-          </div>
+                  <div className='quote shadow'>
+                    <p>“The people who are crazy enough to think they can change the world, are the ones who do.”</p>
+                    <p className='reference'>- Steve Jobs</p>
+                  </div>
+              </aside>
+            </div>
+          </Reveal>
+
         </div>
 
         <div className="blob-right">
@@ -113,6 +127,14 @@ const Home = () => {
             <div className="contact shadow">
               <i class="fa-solid fa-envelope"></i>
               <p className="contact_data">jacoboeadev@gmail.com</p>
+            </div>
+            {/* <div className="contact shadow">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <p className="contact_data">MAC @ UNAM</p>
+            </div> */}
+            <div className="contact shadow" onClick={downloadPDF}>
+              <i class="fa-solid fa-download"></i>
+              <p className="contact_data">Resume</p>
             </div>
           </div>
         </footer>
