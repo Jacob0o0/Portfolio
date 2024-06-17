@@ -41,7 +41,7 @@ function Experience() {
 
   return (
     <section className='screen_size center'>
-        <div className='experience_page' style={{ marginBottom: '100px'}}>
+        <div className='experience_page overflow_phone' style={{ marginBottom: '100px'}}>
             <div className="blob-leftE-blur">
                 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" background-color="transparent">
                     <path fill="#0099DB" transform="translate(100 100)">

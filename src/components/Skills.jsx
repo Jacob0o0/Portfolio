@@ -24,7 +24,7 @@ import laptop from '../assets/images/laptop.png'
 
 function Skills() {
   return (
-    <section className='screen_size center' style={{alignItems:'flex-start'}}>
+    <section className='screen_size center' style={{alignItems:'flex-start', minHeight:'110vh'}}>
       <div className="skills_page column">
         <div className="blob-phone-blur">
             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" background-color="transparent">
@@ -55,69 +55,65 @@ function Skills() {
             </svg>
         </div>
 
-        <Reveal>
-            <p className="page_name">Skills</p>
-        </Reveal>
-        <Reveal>
-            <div className="row_responsive">
-                <div className="skills_L ">
-                    <p className="skill_topic gradient_text">Mobile Development</p>
-                    <div className="dev_skills ">
-                        <div className="device">
-                            <img src={phone} alt="" />
-                        </div>
-                        <div className="circle">
-                            <div className="circle-img-container">
-                                <img src={unity_logo} alt="" className="circle-img"/>
-                            </div>
-                            <div className="circle-img-container">
-                                <img src={swiftui_logo} alt="" className="circle-img"/>
-                            </div>
-                            <div className="circle-img-container">
-                                <img src={coreml_logo} alt="" className="circle-img"/>
-                            </div>
-                            <div className="circle-img-container">
-                                <img src={arkit_logo} alt="" className="circle-img"/>
-                            </div>
-                        </div>
+        <p className="page_name">Skills</p>
+        <div className="row_responsive">
+            <div className="skills_L ">
+                <p className="skill_topic gradient_text">Mobile Development</p>
+                <div className="dev_skills ">
+                    <div className="device">
+                        <img src={phone} alt="" />
                     </div>
-                </div>
-                <div className="skills_R ">
-                    <p className="skill_topic gradient_text">Web Development</p>
-                    <div className="dev_skills ">
-                        <div className="device ">
-                            <img src={laptop} alt="Laptop" />
+                    <div className="circle">
+                        <div className="circle-img-container">
+                            <img src={unity_logo} alt="" className="circle-img"/>
                         </div>
-                        <div className="circle ">
-                            <div className="circle-img-container ">
-                                <img src={html_logo} alt="" className="circle-img"/>
-                            </div>
-                            <div className="circle-img-container">
-                                <img src={css_logo} alt="" className="circle-img"/>
-                            </div>
-                            <div className="circle-img-container">
-                                <img src={php_logo} alt="" className="circle-img"/>
-                            </div>
-                            <div className="circle-img-container">
-                                <img src={JavaScript_logo} alt="" className="circle-img"/>
-                            </div>
-                            <div className="circle-img-container">
-                                <img src={django_logo} alt="" className="circle-img"/>
-                            </div>
-                            <div className="circle-img-container">
-                                <img src={xampp_logo} alt="" className="circle-img"/>
-                            </div>
-                            <div className="circle-img-container">
-                                <img src={react_logo} alt="" className="circle-img"/>
-                            </div>
-                            <div className="circle-img-container">
-                                <img src={bootstrap_logo} alt="" className="circle-img"/>
-                            </div>
+                        <div className="circle-img-container">
+                            <img src={swiftui_logo} alt="" className="circle-img"/>
+                        </div>
+                        <div className="circle-img-container">
+                            <img src={coreml_logo} alt="" className="circle-img"/>
+                        </div>
+                        <div className="circle-img-container">
+                            <img src={arkit_logo} alt="" className="circle-img"/>
                         </div>
                     </div>
                 </div>
             </div>
-        </Reveal>
+            <div className="skills_R ">
+                <p className="skill_topic gradient_text">Web Development</p>
+                <div className="dev_skills ">
+                    <div className="device ">
+                        <img src={laptop} alt="Laptop" />
+                    </div>
+                    <div className="circle ">
+                        <div className="circle-img-container ">
+                            <img src={html_logo} alt="" className="circle-img"/>
+                        </div>
+                        <div className="circle-img-container">
+                            <img src={css_logo} alt="" className="circle-img"/>
+                        </div>
+                        <div className="circle-img-container">
+                            <img src={php_logo} alt="" className="circle-img"/>
+                        </div>
+                        <div className="circle-img-container">
+                            <img src={JavaScript_logo} alt="" className="circle-img"/>
+                        </div>
+                        <div className="circle-img-container">
+                            <img src={django_logo} alt="" className="circle-img"/>
+                        </div>
+                        <div className="circle-img-container">
+                            <img src={xampp_logo} alt="" className="circle-img"/>
+                        </div>
+                        <div className="circle-img-container">
+                            <img src={react_logo} alt="" className="circle-img"/>
+                        </div>
+                        <div className="circle-img-container">
+                            <img src={bootstrap_logo} alt="" className="circle-img"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div className="blob-laptop">
             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" background-color="transparent">
