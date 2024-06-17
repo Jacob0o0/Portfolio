@@ -1,5 +1,4 @@
 import React from 'react'
-import {Reveal} from './utils/Reveal';
 
 // =============== STYLE ===============
 import '../styles/Skills.css'
